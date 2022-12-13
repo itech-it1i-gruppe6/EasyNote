@@ -27,7 +27,7 @@ function Test1() {
                                                 <path fill-rule="evenodd" d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>"
                                             </svg>
                                         </button>
-                                        <div className="absolute right-0  z-12 mt-4 w-40 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
+                                        <div className="absolute right-0  z-12 mt-4 w-40 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button">
                                             <div className="py-1" role="none">
 
                                                 <a href="#" className="text-gray-700 hover:bg-gray-200 block px-4 py-2 text-sm  rounded-md" role="menuitem" id="menu-item-0">Option1</a>
@@ -61,7 +61,7 @@ function Test1() {
                     </button>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
