@@ -12,13 +12,16 @@ function Test1() {
                 </div>
             </div>
             <div className=" mx-auto max-w-2xl py-9">
-                <div className=" py-3 px-3 sm:px-6 lg:px-3 ">
+                <div className=" py-1 px-3 sm:text-left lg:px-3 ">
                     <div >
                         <div>
-                            <div className="  flex flex-row-reverse gap-x-96 py-0">
+                            <div className="  flex gap-x-96 py-0">
+                                <div className="py-1 text-3xl font-bold">
+                                    Your notes name
+                                </div>
                                 <div className="inline-block ">
-                                    <div className="absolute">
-                                        <button type="button" className="mt-7 inline-flex h-6 w-6 items-center mx- justify-center rounded-md hover:bg-gray-200 e focus:ring-1 focus:ring-gray-200  "
+                                    <div className="absolute px-4">
+                                        <button type="button" className="mt-4 inline-flex h-6 w-6 items-center mx- justify-center rounded-md hover:bg-gray-200 e focus:ring-1 focus:ring-gray-200  "
                                             id="menu-button" data-dropdown-toggle = "dropdownDots" aria-expanded="true" aria-haspopup="true">
                                             <svg className="  h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                                 <path fill-rule="evenodd" d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>"
@@ -39,10 +42,7 @@ function Test1() {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="py-1 text-3xl font-bold">
-                                    Your notes name
-                                </div>
+                                </div>                             
                             </div>
                         </div>
                     </div>
