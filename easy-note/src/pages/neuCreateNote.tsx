@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import * as React from 'react';
-import { Class } from "superjson/dist/types";
 
 
 function Test1() {
@@ -15,7 +14,7 @@ function Test1() {
             <div className=" mx-auto max-w-2xl py-9">
                 <div className=" py-3 px-3 sm:px-6 lg:px-3 ">
                     <div >
-                        <div className=" ">
+                        <div>
                             <div className="  flex flex-row-reverse gap-x-96 py-0">
                                 <div className="inline-block ">
                                     <div className="absolute">
