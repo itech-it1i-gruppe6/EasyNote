@@ -2,8 +2,7 @@ import { NextPage } from "next";
 import * as React from 'react';
 
 
-function Test1() {
-
+function Test1(): JSX.Element {
 
     return (
         <div>
@@ -24,7 +23,7 @@ function Test1() {
                                         <button type="button" className="mt-4 inline-flex h-6 w-6 items-center mx- justify-center rounded-md hover:bg-gray-200 e focus:ring-1 focus:ring-gray-200  "
                                             id="menu-button" data-dropdown-toggle = "dropdownDots" aria-expanded="true" aria-haspopup="true">
                                             <svg className="  h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd" d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>"
+                                                <path fill-rule="evenodd" d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
                                             </svg>
                                         </button>
                                         <div id="dropdownDots" className="hidden absolute right-0  z-12 mt-4 w-40 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" 
