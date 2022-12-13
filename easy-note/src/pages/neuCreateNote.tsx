@@ -12,14 +12,10 @@ function Test1() {
                 <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
                 </div>
             </div>
-
-
             <div className=" mx-auto max-w-2xl py-9">
                 <div className=" py-3 px-3 sm:px-6 lg:px-3 ">
                     <div >
-
                         <div className=" ">
-
                             <div className="  flex flex-row-reverse gap-x-96 py-0">
                                 <div className="inline-block ">
                                     <div className="absolute">
@@ -35,25 +31,20 @@ function Test1() {
                                         <div className="absolute right-0  z-12 mt-4 w-40 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
                                             <div className="py-1" role="none">
 
-                                                <a href="#" className="text-gray-700 hover:bg-gray-200 block px-4 py-2 text-sm  rounded-md" role="menuitem" tabIndex="-1" id="menu-item-0">Option1</a>
-                                                <a href="#" className="text-gray-700 hover:bg-gray-200 block px-4 py-2 text-sm  rounded-md" role="menuitem" tabIndex="-1" id="menu-item-1">Option2</a>
-                                                <a href="#" className="text-gray-700 hover:bg-gray-200 block px-4 py-2 text-sm  rounded-md" role="menuitem" tabIndex="-1" id="menu-item-2">Option3</a>
+                                                <a href="#" className="text-gray-700 hover:bg-gray-200 block px-4 py-2 text-sm  rounded-md" role="menuitem" id="menu-item-0">Option1</a>
+                                                <a href="#" className="text-gray-700 hover:bg-gray-200 block px-4 py-2 text-sm  rounded-md" role="menuitem" id="menu-item-1">Option2</a>
+                                                <a href="#" className="text-gray-700 hover:bg-gray-200 block px-4 py-2 text-sm  rounded-md" role="menuitem" id="menu-item-2">Option3</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div className="py-1 text-3xl font-bold">
                                     Your notes name
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
                 <div className="flex justify-center ">
                     <textarea
                         className="block w-full rounded-xl border-warm-gray-700 px-4 py-3 text-base font-normal text-gray-500 bg-white bg-clip-padding
@@ -70,11 +61,8 @@ function Test1() {
                         Cancel
                     </button>
                 </div>
-
-
             </div>
         </div>
-
     )
 }
 
