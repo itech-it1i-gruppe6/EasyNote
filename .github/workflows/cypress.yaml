@@ -1,0 +1,31 @@
+#specifies Events, Jobs,Runners, Steps, Actions
+# Event- trigger for a workflow
+# 
+name: Cypress Tests
+
+on:  
+  push: #pushed to repo -trigger 
+    branches:
+      -'feat/Testing_pipeline'
+      pull_request:
+    
+  jobs:
+
+  start:
+    runs on: ubuntu-latest
+
+  steps:
+    -name: Checkout #checks, pulls in the pipeline 
+     uses: action/checkout@v2
+
+    -name: Cypress run #installs our dependencies
+     uses: cypress-io/github-action@v2
+     with:
+
+      build: npm run build
+      start: npm start #?
+  
+
+
+
+
