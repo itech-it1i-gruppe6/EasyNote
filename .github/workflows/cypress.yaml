@@ -7,7 +7,7 @@ on:
   push: #pushed to repo -trigger 
     branches:
       -'feat/Testing_pipeline'
-      pull_request:
+    
     
   jobs:
 
