@@ -14,19 +14,22 @@ import * as React from "react";
 const list = [
   {
     note: {
-      name: "Notits 1",
+      name: "Einkaufsliste für Samstag Abend",
+      notits: "Notits 1",
     },
     href: "#",
   },
   {
     note: {
-      name: "Notits 2",
+      name: "Arzt Termine in einer Notits gesammelt",
+      notits: "Notits 2",
     },
     href: "#",
   },
   {
     note: {
-      name: "Notits 3",
+      name: "TÜV für das Auto / Geburtstagsgeschenk für Enkelkinder",
+      notits: "Notits 3",
     },
     href: "#",
   },
@@ -34,25 +37,24 @@ const list = [
 
 const Testlist: NextPage = () => {
   return (
-    <div className="overflow-hidden bg-white shadow sm:rounded-md">
-      <ul role="list" className="divide-y divide-gray-200">
+    <div className="mx-80 overflow-hidden bg-white">
+      <ul
+        role="list"
+        className="divide-y-2 divide-gray-200 border-b-2 border-gray-200"
+      >
         {list.map((list) => (
           <a href={list.href} className="block hover:bg-gray-100">
-            <div className="flex items-center px-3 py-3 sm:px-3">
-              <div className="flex min-w-0 flex-1 items-center">
-                <div className="flex-shrink-0"></div>
-                <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
-                  <div>
-                    <p className="truncate text-sm font-medium text-indigo-600">
-                      {list.note.name}
-                    </p>
-                  </div>
-                  <div className="hidden md:block"></div>
-                </div>
+            <div className="flex justify-between py-6">
+              <div className=" pl-4">
+                {" "}
+                <p className="... overflow-hidden overflow-ellipsis text-xl font-medium text-indigo-600 hover:text-clip">
+                  {list.note.name}
+                </p>
               </div>
-              <div>
+              <div className="pr-4">
+                {" "}
                 <TrashIcon
-                  className="h-5 w-5 text-gray-400"
+                  className="h-7 w-7 text-gray-400"
                   aria-hidden="true"
                 />
               </div>
