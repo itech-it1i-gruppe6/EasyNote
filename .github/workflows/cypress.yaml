@@ -11,19 +11,18 @@ on:
     
   jobs:
 
-  start:
-    runs on: ubuntu-latest
+    start:
+     runs on: ubuntu-latest
 
-  steps:
-    -name: Checkout #checks, pulls in the pipeline 
-     uses: action/checkout@v2
+     steps:
+      - name: Checkout #checks, pulls in the pipeline 
+        uses: action/checkout@v2
 
-    -name: Cypress run #installs our dependencies
-     uses: cypress-io/github-action@v2
-     with:
-
-      build: npm run build
-      start: npm start #?
+      - name: Cypress run #installs our dependencies
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm start #?
   
 
 
