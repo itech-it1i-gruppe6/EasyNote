@@ -15,25 +15,36 @@ const list = [
   {
     note: {
       name: "Einkaufsliste für Samstag Abend",
-      notits: "Notits 1",
     },
     href: "#",
   },
   {
     note: {
       name: "Arzt Termine in einer Notits gesammelt",
-      notits: "Notits 2",
     },
     href: "#",
   },
   {
     note: {
       name: "TÜV für das Auto / Geburtstagsgeschenk für Enkelkinder",
-      notits: "Notits 3",
     },
     href: "#",
   },
 ];
+
+function DeleteButton() {
+  const handleClick = () => {
+    alert("The delete button was clicked!");
+  };
+  return (
+    <button onClick={handleClick}>
+      <div className="pr-4">
+        {" "}
+        <TrashIcon className="h-7 w-7 text-gray-400" aria-hidden="true" />
+      </div>
+    </button>
+  );
+}
 
 const Testlist: NextPage = () => {
   return (
@@ -52,13 +63,7 @@ const Testlist: NextPage = () => {
                     {list.note.name}
                   </p>
                 </div>
-                <div className="pr-4">
-                  {" "}
-                  <TrashIcon
-                    className="h-7 w-7 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </div>
+                <div className="pr-4"> {DeleteButton("Item 1")}</div>
               </div>
             </a>
           ))}
