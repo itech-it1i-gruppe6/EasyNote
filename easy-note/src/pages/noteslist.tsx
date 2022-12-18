@@ -37,31 +37,33 @@ const list = [
 
 const Testlist: NextPage = () => {
   return (
-    <div className="mx-80 overflow-hidden bg-white">
-      <ul
-        role="list"
-        className="divide-y-2 divide-gray-200 border-b-2 border-gray-200"
-      >
-        {list.map((list) => (
-          <a href={list.href} className="block hover:bg-gray-100">
-            <div className="flex justify-between py-6">
-              <div className=" pl-4">
-                {" "}
-                <p className="... overflow-hidden overflow-ellipsis text-xl font-medium text-indigo-600 hover:text-clip">
-                  {list.note.name}
-                </p>
+    <div style={{ padding: "0 20%" }}>
+      <div className="mx-auto overflow-hidden bg-white">
+        <ul
+          role="list"
+          className="divide-y-2 divide-gray-200 border-b-2 border-gray-200"
+        >
+          {list.map((list) => (
+            <a href={list.href} className="block hover:bg-gray-100">
+              <div className="flex justify-between py-6">
+                <div className=" pl-4">
+                  {" "}
+                  <p className="... overflow-hidden overflow-ellipsis text-xl font-medium text-indigo-600 hover:text-clip">
+                    {list.note.name}
+                  </p>
+                </div>
+                <div className="pr-4">
+                  {" "}
+                  <TrashIcon
+                    className="h-7 w-7 text-gray-400"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
-              <div className="pr-4">
-                {" "}
-                <TrashIcon
-                  className="h-7 w-7 text-gray-400"
-                  aria-hidden="true"
-                />
-              </div>
-            </div>
-          </a>
-        ))}
-      </ul>
+            </a>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
