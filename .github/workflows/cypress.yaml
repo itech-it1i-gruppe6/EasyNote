@@ -6,10 +6,10 @@ name: Cypress Tests
 #Trigger - pushed to repo  
 on:
   push:
-    branches: [ "master" ]
+    #branches: [ "master" ]
     # paths:
-  pull_request:
-    branches: [ "master" ]
+  #pull_request:
+    #branches: [ "master" ]
     paths:
       '.github/workflows/cypress.yaml'
 
