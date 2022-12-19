@@ -9,27 +9,32 @@ on:
     #branches:
      # -'feat/Testing_pipeline'
 jobs:
-  start:
+  set-up:
     runs-on: ubuntu-latest
 
     # Checks repo, pulls in the pipeline 
     steps:
     - name: Checkout 
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-     # Set up Node
+     # Sets up Node
     - name: Use Node 16
       uses: actions/setup-node@v1
       with:
         node-version: 16
+      
+      
 
-    - name: Cypress run #installs our dependencies
-      uses: cypress-io/github-action@v2
+    # Installs our dependencies
+    - name: Cypress run 
+      uses: cypress-io/github-action@v3
       with:
        # repository: itech-it1i-gruppe6/EasyNote
         #repo-token: ${{ secrets.GITHUB_TOKEN }}
         build: yarn build
-        start: yarn dev #?
+        start: yarn start
+
+      
   
 
 
