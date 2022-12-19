@@ -16,7 +16,7 @@ on:
   #workflow_dispatch:
 
 env:
-  workingDirectory: easy-note
+  workingDirectory: /easy-note
 
 jobs:
   set-up:
