@@ -9,7 +9,7 @@ on:
      # -'feat/Testing_pipeline'
 jobs:
   start:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout #checks, pulls in the pipeline 
