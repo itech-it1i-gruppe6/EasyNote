@@ -10,7 +10,8 @@ on:
     # paths:
   pull_request:
     branches: [ "master" ]
-    # paths:
+    paths:
+      '.github/workflows/cypress.yaml'
 
   workflow_dispatch:
 
