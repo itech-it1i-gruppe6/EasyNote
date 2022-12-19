@@ -44,7 +44,7 @@ jobs:
         node-version: '16'
 
     - name: Yarn clean
-      run: yarn --cwd ~/${{ github.workspace }}/${{ env.workingDirectory }}/ cache clean
+      run: yarn --cwd ~/work/EasyNote/easy-note/ cache clean
 
     - name: Install dependencies
       run: yarn --cwd ~/easy-note/ install
