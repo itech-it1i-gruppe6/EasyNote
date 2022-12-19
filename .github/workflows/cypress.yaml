@@ -6,6 +6,8 @@ name: Cypress Tests
 #Trigger - pushed to repo  
 on:  
   push: 
+    paths:
+      - 'easy-note/**'
     #branches:
      # -'feat/Testing_pipeline'
 jobs:
@@ -35,7 +37,6 @@ jobs:
       with:
         #repository: itech-it1i-gruppe6/EasyNote/easy-note
         #repo-token: ${{ secrets.GITHUB_TOKEN }}
-        path: /home/runner/work/EasyNote/EasyNote/easy-note
         build: yarn build
         start: yarn start
 
