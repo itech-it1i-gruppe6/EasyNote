@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
 
 env:
-  workingDirectory: EasyNote/easy-note
+  workingDirectory: ./easy-note
 
 jobs:
   set-up:
@@ -35,6 +35,7 @@ jobs:
       run: | 
         echo ${{ github.workspace }};
         echo ${{ env.workingDirectory }}
+        echo ls;
 
      # Sets up Node
     - name: Use Node 16
