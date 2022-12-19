@@ -24,6 +24,7 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
+      run: yarn cache clean
       run: yarn install
 
     # Installs our dependencies
