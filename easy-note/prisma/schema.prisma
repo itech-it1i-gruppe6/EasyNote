@@ -23,6 +23,7 @@ model Example {
 model Note {
   id        String   @id @default(cuid())
   text      String
+  titel     String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   ownerId   String
