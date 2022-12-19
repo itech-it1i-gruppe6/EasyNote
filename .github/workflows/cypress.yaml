@@ -31,6 +31,11 @@ jobs:
     - name: Checkout 
       uses: actions/checkout@v3
 
+    - name: Log
+      run: | 
+        echo ${{ github.workspace }};
+        echo ${{ env.workingDirectory }}
+
      # Sets up Node
     - name: Use Node 16
       uses: actions/setup-node@v3
