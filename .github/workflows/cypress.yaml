@@ -3,25 +3,51 @@
 # 
 name: Cypress Tests
 
-on:  
-  push: #pushed to repo -trigger 
-    #branches:
-     # -'feat/Testing_pipeline'
+#Trigger - pushed to repo  
+on:
+  push:
+    branches: [ "Testing_pipeline" ]
+    # paths:
+  pull_request:
+    branches: [ "master" ]
+    # paths:
+
+  workflow_dispatch:
+
+env:
+  workingDirectory: EasyNote/easy-note
+
 jobs:
-  start:
+  set-up:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ${{ env.workingDirectory }}
+
+    # Checks repo, pulls in the pipeline 
     steps:
-    - name: Checkout #checks, pulls in the pipeline 
-      uses: action/checkout@v2
+    - name: Checkout 
+      uses: actions/checkout@v3
 
-    - name: Cypress run #installs our dependencies
-      uses: cypress-io/github-action@v2
+     # Sets up Node
+    - name: Use Node 16
+      uses: actions/setup-node@v3
       with:
+        node-version: '16'
+
+    - name: Yarn clean
+      run: yarn cache clean
+
+    - name: Install dependencies
+      run: yarn install
+
+    # Installs our dependencies
+    - name: Cypress run 
+      uses: cypress-io/github-action@v3
+      with:
+        #repository: itech-it1i-gruppe6/EasyNote/easy-note
+        #repo-token: ${{ secrets.GITHUB_TOKEN }}
+        #path: /home/runner/work/EasyNote/EasyNote/easy-note
         build: yarn build
-        start: yarn dev #?
-  
-
-
-
-
+        start: yarn start
