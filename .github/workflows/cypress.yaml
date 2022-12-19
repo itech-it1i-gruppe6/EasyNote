@@ -5,8 +5,8 @@ name: Cypress Tests
 
 on:  
   push: #pushed to repo -trigger 
-    branches:
-      -'feat/Testing_pipeline'
+    #branches:
+     # -'feat/Testing_pipeline'
 jobs:
   start:
     runs on: ubuntu-latest
