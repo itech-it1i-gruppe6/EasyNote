@@ -58,7 +58,7 @@ jobs:
         #path: /home/runner/work/EasyNote/EasyNote/easy-note
         start: yarn start
         project: ./easy-note
-        build: yarn build
+       # build: yarn build
         install: false
         
 
