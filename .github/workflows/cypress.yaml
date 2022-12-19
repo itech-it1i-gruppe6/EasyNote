@@ -6,13 +6,14 @@ name: Cypress Tests
 #Trigger - pushed to repo  
 on:
   push:
-    branches: [ "Testing_pipeline" ]
+   # branches: [ "Testing_pipeline" ]
     # paths:
-  pull_request:
-    branches: [ "master" ]
+  
+  #pull_request:
+   # branches: [ "master" ]
     # paths:
 
-  workflow_dispatch:
+  #workflow_dispatch:
 
 env:
   workingDirectory: EasyNote/easy-note
