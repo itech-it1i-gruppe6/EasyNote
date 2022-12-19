@@ -3,17 +3,25 @@
 # 
 name: Cypress Tests
 
+#Trigger - pushed to repo  
 on:  
-  push: #pushed to repo -trigger 
+  push: 
     #branches:
      # -'feat/Testing_pipeline'
 jobs:
   start:
     runs-on: ubuntu-latest
 
+    # Checks repo, pulls in the pipeline 
     steps:
-    - name: Checkout #checks, pulls in the pipeline 
+    - name: Checkout 
       uses: actions/checkout@v2
+
+     # Set up Node
+    - name: Use Node 16
+      uses: actions/setup-node@v1
+      with:
+        node-version: 16
 
     - name: Cypress run #installs our dependencies
       uses: cypress-io/github-action@v2
