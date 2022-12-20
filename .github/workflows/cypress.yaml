@@ -31,12 +31,6 @@ jobs:
     - name: Checkout 
       uses: actions/checkout@v3
 
-    - name: Log
-      run: | 
-        echo ${{ github.workspace }};
-        echo ${{ env.workingDirectory }}
-        echo ls;
-
      # Sets up Node
     - name: Use Node 18
       uses: actions/setup-node@v3
@@ -44,7 +38,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: yarn --cwd ./easy-note/ install
+      run: yarn --cwd ./easy-note/ install --frozen-lockfile
 
     # Installs our dependencies
     - name: Cypress run 
@@ -54,9 +48,9 @@ jobs:
         #repo-token: ${{ secrets.GITHUB_TOKEN }}
         #path: /home/runner/work/EasyNote/EasyNote/easy-note
         start: yarn start
-        project: ./easy-note
-        build: yarn  build
-        install: true
+        project: ./easy-note 
+        build: yarn  build:ci
+        install: false
         
 
       
