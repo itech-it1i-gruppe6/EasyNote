@@ -63,7 +63,7 @@ const Testlist: NextPage = () => {
                     {list.note.name}
                   </p>
                 </div>
-                <div className="pr-4"> {DeleteButton("Item 1")}</div>
+                <div className="pr-4"> {DeleteButton()}</div>
               </div>
             </a>
           ))}
