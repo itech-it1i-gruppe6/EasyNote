@@ -30,9 +30,11 @@ jobs:
     defaults:
       run:
         working-directory: ./easy-note
+        
 
     # Checks repo, pulls in the pipeline 
     steps:
+    - run: pwd 
     - name: Checkout 
       uses: actions/checkout@v3
 
