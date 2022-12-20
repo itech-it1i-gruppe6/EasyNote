@@ -44,7 +44,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: yarn --cwd ~/easy-note/ install
+      run: yarn --cwd ./easy-note/ install
 
     # Installs our dependencies
     - name: Cypress run 
@@ -53,7 +53,7 @@ jobs:
         #repository: itech-it1i-gruppe6/EasyNote/easy-note
         #repo-token: ${{ secrets.GITHUB_TOKEN }}
         #path: /home/runner/work/EasyNote/EasyNote/easy-note
-        start: yarn --cwd ~/easy-note/ start
+        start: yarn --cwd ./easy-note/ start
         project: ./easy-note
        # build: yarn build
         install: false
