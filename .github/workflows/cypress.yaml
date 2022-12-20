@@ -45,7 +45,7 @@ jobs:
       run: yarn --cwd ./easy-note/ install --frozen-lockfile
 
     - name: Change directory
-      run: cd ./easy-note
+      run: cd ${{ github.workspace }}/EasyNote/easy-note
 
     # Installs our dependencies
     - name: Cypress run 
