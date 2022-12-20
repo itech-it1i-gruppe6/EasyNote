@@ -47,9 +47,9 @@ jobs:
         #repository: itech-it1i-gruppe6/EasyNote/easy-note
         #repo-token: ${{ secrets.GITHUB_TOKEN }}
         #path: /home/runner/work/EasyNote/EasyNote/easy-note
-        start: yarn start
+        start: yarn --cwd ./easy-note/ start
         project: ./easy-note 
-        build: yarn  build:ci
+        build: yarn --cwd ./easy-note/ build:ci
         install: false
         
 
