@@ -49,7 +49,7 @@ jobs:
         #path: /home/runner/work/EasyNote/EasyNote/easy-note
         start: yarn --cwd ./easy-note/ start
         project: ./easy-note 
-        build: yarn --cwd ./easy-note/ build:ci
+        build: yarn --cwd ./easy-note/ build
         install: false
         
 
