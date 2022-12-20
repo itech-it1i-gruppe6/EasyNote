@@ -27,11 +27,6 @@ jobs:
   set-up:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: easy-note
-        
-
     # Checks repo, pulls in the pipeline 
     steps:
     - name: Checkout 
@@ -56,6 +51,7 @@ jobs:
         project: ./easy-note 
         build: yarn  build
         install: false
+      working-directory: easy-note
         
 
       
