@@ -46,7 +46,7 @@ jobs:
       run: yarn --cwd ./easy-note/ build
 
     - name: test
-      run: yarn --cwd ./easy-note/ start && yarn --cwd ./easy-note/ cypress run --e2e --browser chrome --headless  
+      run: yarn --cwd ./easy-note/ start && yarn --cwd ./easy-note/ cypress run --e2e --browser electron --headless  
 
         
 
