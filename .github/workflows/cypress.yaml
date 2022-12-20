@@ -28,7 +28,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ${{ github.workspace }}/${{ env.workingDirectory }}
+        working-directory: ${{ github.workspace }}/easy-note
 
     # Checks repo, pulls in the pipeline 
     steps:
@@ -43,9 +43,6 @@ jobs:
 
     - name: Install dependencies
       run: yarn --cwd ./easy-note/ install --frozen-lockfile
-
-    - name: Change directory
-      run: cd ${{ github.workspace }}/easy-note
 
     # Installs our dependencies
     - name: Cypress run 
