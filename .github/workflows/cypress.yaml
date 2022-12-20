@@ -51,7 +51,7 @@ jobs:
         project: ./easy-note 
         build: yarn  build
         install: false
-      working-directory: easy-note
+        working-directory: easy-note
         
 
       
