@@ -38,13 +38,10 @@ jobs:
         echo ls;
 
      # Sets up Node
-    - name: Use Node 16
+    - name: Use Node 18
       uses: actions/setup-node@v3
       with:
-        node-version: '16'
-
-    - name: Yarn clean
-      run: yarn --cwd ~/${{ github.workspace}}/easy-note/ cache clean
+        node-version: '18'
 
     - name: Install dependencies
       run: yarn --cwd ~/easy-note/ install
