@@ -51,6 +51,8 @@ jobs:
         build: yarn  build
         install: false
         working-directory: easy-note
+        browser: chrome
+        headed: false
         
 
       
