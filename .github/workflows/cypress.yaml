@@ -52,7 +52,7 @@ jobs:
         install: false
         working-directory: easy-note
         browser: chrome
-        headed: false
+        headless: true
         
 
       
