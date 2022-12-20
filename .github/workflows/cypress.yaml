@@ -42,17 +42,12 @@ jobs:
     - name: Install dependencies
       run: yarn --cwd ./easy-note/ install --frozen-lockfile
 
-    # Installs our dependencies
-    - name: Cypress run 
-      uses: cypress-io/github-action@v3
-      with:
-        start: yarn start
-        project: ./easy-note 
-        build: yarn  build
-        install: false
-        working-directory: easy-note
-        browser: chrome
-        headless: true
+    - name: build
+      run: yarn --cwd ./easy-note/ build
+
+    - name: test
+      run: yarn --cwd ./easy-note/ start && yarn --cwd ./easy-note/ cypress run --e2e --browser chrome --headless  
+
         
 
       
