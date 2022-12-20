@@ -56,7 +56,7 @@ jobs:
         start: yarn start
         project: ./easy-note
         build: yarn  build
-        install: false
+        install: true
         
 
       
