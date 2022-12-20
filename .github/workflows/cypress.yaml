@@ -1,0 +1,58 @@
+#specifies Events, Jobs,Runners, Steps, Actions
+# Event- trigger for a workflow
+# 
+name: Cypress Tests
+
+#Trigger - pushed to repo  
+on:
+  push:
+    #branches: [ "master" ]
+    # paths:
+  #pull_request:
+    #branches: [ "master" ]
+    paths:
+      '.github/workflows/cypress.yaml'
+
+  workflow_dispatch:
+
+env:
+  workingDirectory: ./easy-note
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET}}
+  NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
+
+
+jobs:
+  set-up:
+    runs-on: ubuntu-latest
+
+    # Checks repo, pulls in the pipeline 
+    steps:
+    - name: Checkout 
+      uses: actions/checkout@v3
+      
+    - run: pwd 
+
+     # Sets up Node
+    - name: Use Node 18
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: yarn --cwd ./easy-note/ install --frozen-lockfile
+
+    - name: build
+      run: yarn --cwd ./easy-note/ build
+
+    - name: test
+      run: yarn --cwd ./easy-note/ start && yarn --cwd ./easy-note/ cypress run --e2e --browser electron --headless  
+
+        
+
+      
+  
+
+
+
+
