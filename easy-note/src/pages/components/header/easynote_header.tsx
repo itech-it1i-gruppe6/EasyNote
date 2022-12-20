@@ -6,7 +6,6 @@ const Header: React.FC = () => {
   return (
     <header className="bg-indigo-900">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        {/* Weißer Balken???*/}
         <div className="flex w-full items-center justify-between bg-indigo-900 py-6">
           <div className="flex items-center">
             {/*Logo*/}
