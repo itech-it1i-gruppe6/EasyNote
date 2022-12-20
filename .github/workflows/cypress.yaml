@@ -17,6 +17,7 @@ on:
 
 env:
   workingDirectory: ./easy-note
+  
 
 jobs:
   set-up:
