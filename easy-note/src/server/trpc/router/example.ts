@@ -1,4 +1,9 @@
 import { z } from "zod";
+import { z } from "zod";
+
+import { router, publicProcedure } from "../trpc";
+
+export const exampleRouter = router({
 
 import { router, publicProcedure } from "../trpc";
 

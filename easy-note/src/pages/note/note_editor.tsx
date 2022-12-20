@@ -1,8 +1,9 @@
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import * as React from "react";
 import DropdownIconMenu from "../components/dropdown/dropdown_icon_menu";
 
 const NoteEditorPage: NextPage = (): JSX.Element => {
+  const note = {};
   return (
     <div>
       <div className="bg-violet-800">
@@ -18,12 +19,10 @@ const NoteEditorPage: NextPage = (): JSX.Element => {
                   items={[
                     {
                       name: "rename",
-                      icon: <a></a>,
                       action: () => alert("hi"),
                     },
                     {
                       name: "delete",
-                      icon: <a></a>,
                       action: () => alert("delete"),
                     },
                   ]}
@@ -35,7 +34,7 @@ const NoteEditorPage: NextPage = (): JSX.Element => {
         <div className="flex justify-center ">
           <textarea
             className="border-warm-gray-700 focus:border-1 block h-80 w-full rounded-xl border-2 border-gray-200 bg-white bg-clip-padding px-4
-                                     py-3 text-base font-normal text-gray-500 transition ease-in-out 
+                                     py-3 text-base font-normal text-gray-500 transition ease-in-out
                                     focus:border-gray-600 focus:bg-white focus:text-gray-500  focus:outline-none"
             id="exampleFormControlTextarea1"
             placeholder="Write your thoughts here "
@@ -129,7 +128,7 @@ const NoteEditorPage: NextPage = (): JSX.Element => {
 
 <div className="absolute">
     <button type=
-        "button" className="mt-7 inline-flex h-6 w-6 items-center mx- justify-center rounded-md 
+        "button" className="mt-7 inline-flex h-6 w-6 items-center mx- justify-center rounded-md
                                   hover:bg-gray-200 e focus:ring-1 focus:ring-gray-200  "
         id="menu-button" aria-expanded="true" aria-haspopup="true">
 
