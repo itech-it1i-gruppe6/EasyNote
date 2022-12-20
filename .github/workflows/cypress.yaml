@@ -48,9 +48,6 @@ jobs:
     - name: Cypress run 
       uses: cypress-io/github-action@v3
       with:
-        #repository: itech-it1i-gruppe6/EasyNote/easy-note
-        #repo-token: ${{ secrets.GITHUB_TOKEN }}
-        #path: /home/runner/work/EasyNote/EasyNote/easy-note
         start: yarn --cwd ./easy-note/ start
         project: ./easy-note 
         build: yarn --cwd ./easy-note/ build
