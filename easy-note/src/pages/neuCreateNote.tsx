@@ -26,7 +26,7 @@ function Test1(): JSX.Element {
                                                 <path fill-rule="evenodd" d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
                                             </svg>
                                         </button>
-                                        <div id="dropdownDots" className="hidden absolute right-0  z-12 mt-4 w-40 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" 
+                                        <div id="dropdownDots" className="hidden absolute right-0  z-12 mt-4 w-40 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                                             role="menu" aria-orientation="vertical" tabIndex={-1}>
                                             <ul className="py-1" role="none" aria-labelledby="menu-button">
                                                 <li>
@@ -41,7 +41,7 @@ function Test1(): JSX.Element {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>                             
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ function Test1(): JSX.Element {
                 <div className="flex justify-center ">
                     <textarea
                         className="block w-full rounded-xl border-warm-gray-700 px-4 py-3 text-base font-normal text-gray-500 bg-white bg-clip-padding
-                                     transition ease-in-out focus:text-gray-500 focus:bg-white focus:border-gray-600 focus:border-1 
+                                     transition ease-in-out focus:text-gray-500 focus:bg-white focus:border-gray-600 focus:border-1
                                     focus:outline-none h-80 border-2  border-gray-200" id="exampleFormControlTextarea1" placeholder="Write your thoughts here ">
                     </textarea>
 
@@ -63,7 +63,6 @@ function Test1(): JSX.Element {
                     </button>
                 </div>
             </div>
-            <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
         </div>
     )
 }
@@ -71,7 +70,7 @@ function Test1(): JSX.Element {
 
 /*<div className="absolute">
     <button type=
-        "button" className="mt-7 inline-flex h-6 w-6 items-center mx- justify-center rounded-md 
+        "button" className="mt-7 inline-flex h-6 w-6 items-center mx- justify-center rounded-md
                                   hover:bg-gray-200 e focus:ring-1 focus:ring-gray-200  "
         id="menu-button" aria-expanded="true" aria-haspopup="true">
 
