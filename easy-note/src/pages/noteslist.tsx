@@ -8,7 +8,7 @@ import {
   PencilSquareIcon,
   TrashIcon,
 } from "@heroicons/react/20/solid";
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import * as React from "react";
 
 const list = [
@@ -54,8 +54,8 @@ const Testlist: NextPage = () => {
           role="list"
           className="divide-y-2 divide-gray-200 border-b-2 border-gray-200"
         >
-          {list.map((list) => (
-            <a href={list.href} className="block hover:bg-gray-100">
+          {list.map((list, idx) => (
+            <a key={idx} href={list.href} className="block hover:bg-gray-100">
               <div className="flex justify-between py-6">
                 <div className=" pl-4">
                   {" "}
