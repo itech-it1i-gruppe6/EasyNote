@@ -11,4 +11,15 @@ export const noteRouter = router({
             },
         });
     }),
+    getAll: protectedProcedure.query(({ ctx }) => {
+        return ctx.prisma.note.findMany({
+            where: {
+                owner: ctx.session.user,
+            },
+            select: {
+                id: true,
+                titel: true,
+            },
+        });
+    }),
 });
