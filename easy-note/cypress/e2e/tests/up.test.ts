@@ -1,9 +1,8 @@
 import { Cipher } from "crypto"
 
-describe('example test', () => {
+describe('Service available', () => {
     beforeEach(() => {
             cy.visit("http://localhost:3000/")
-
     })
-    it("some", () => {cy.wait(10)})
+    it("resolves", () => {cy.wait(10)})
 })
